@@ -14,6 +14,8 @@ num_epochs = 6
 Accuracy on the evaluation set: 0.9220 
 
 ## Pipeline on Huggingface
+Link : [hieudinhpro/BERT_Sentiment_Vietnamese](https://huggingface.co/hieudinhpro/BERT_Sentiment_Vietnamese)
+
 ![hg](image/hg.png)
 
 ## Using Docker 
