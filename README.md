@@ -1,7 +1,7 @@
 # School sentiment analysts 
 
 ## The dataset 
- Using Vietnamese Students’ Feedback Corpus
+ Using Vietnamese Students’ Feedback Corpus. \
  Students’ feedback is a vital resource for the interdisciplinary research fields between sentiment analysis for education.
 ## Fineturn on RoBERTa model 
 Hyperparameters :
