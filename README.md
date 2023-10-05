@@ -2,7 +2,7 @@
 
 ## The dataset 
  Using Vietnamese Students’ Feedback Corpus. \
- Students’ feedback is a vital resource for the interdisciplinary research fields between sentiment analysis for education.
+ Students’ feedback is a vital resource for research fields sentiment analysis for education.
 ## Fineturn on RoBERTa model 
 Hyperparameters :
 ```
