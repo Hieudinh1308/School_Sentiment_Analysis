@@ -3,6 +3,9 @@
 ## The dataset 
  Using Vietnamese Students’ Feedback Corpus. \
  Students’ feedback is a vital resource for research fields sentiment analysis for education.
+
+ ![hg](image/data.png)
+
 ## Fineturn on RoBERTa model 
 Hyperparameters :
 ```
