@@ -1,4 +1,5 @@
-app
-.ipynb_checkpoints
-.virtual_documents
+/app/
+/.ipynb_checkpoints/
+/.virtual_documents/
+
 Fine_turning_BERT_VN.ipynb
