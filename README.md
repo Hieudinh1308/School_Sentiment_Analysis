@@ -1,6 +1,7 @@
 # School sentiment analysts 
 
 ## The dataset 
+Link : [UIT-VSFC (version 1.0) - Vietnamese Students’ Feedback Corpus](https://nlp.uit.edu.vn/datasets/#h.p_4Brw8L-cbfTe) \
  Using Vietnamese Students’ Feedback Corpus. \
  Students’ feedback is a vital resource for research fields sentiment analysis for education.
 
