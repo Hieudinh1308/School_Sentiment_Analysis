@@ -29,8 +29,10 @@ pipe = pipeline("text-classification", model="hieudinhpro/BERT_Sentiment_Vietnam
 ![hg](image/hg.png)
 ## Sentiment Analysis 
 Some of charts visualization predicted 
-![hg](image/pie5.png)
-![hg](image/pie6.png)
+![hg](image/pie.png)
+![hg](image/pie2.png)
+![hg](image/pie3.png)
+![hg](image/pie4.png)
 
 ## Using Docker 
 ```
