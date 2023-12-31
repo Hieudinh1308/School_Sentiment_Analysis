@@ -27,7 +27,10 @@ from transformers import pipeline
 pipe = pipeline("text-classification", model="hieudinhpro/BERT_Sentiment_Vietnamese")
 ```
 ![hg](image/hg.png)
-
+## Sentiment Analysis 
+Some of charts visualization predicted 
+![hg](image/pie.png)
+![hg](image/pie2.png)
 ## Using Docker 
 ```
 docker pull hieudinhpro/school_sentiment_analysts:v1
