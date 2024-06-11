@@ -1,0 +1,2 @@
+lecturer_topic,learning_program_topic,facility_topic,orther_topic
+"[{'label': 'POSITIVE', 'score': 0.9847191572189331}]","[{'label': 'NEUTRAL', 'score': 0.9567136764526367}]","[{'label': 'NEGATIVE', 'score': 0.9961305856704712}]","[{'label': 'NEGATIVE', 'score': 0.9904244542121887}]"

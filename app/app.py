@@ -5,7 +5,7 @@ from PIL import Image
 
 
 
-st.title("School Sentiment Analysis")
+st.title("School Sentiment Analysis Demo")
 
 st.markdown('''
     :red[Type] :orange[something] :green[here]  .''')
@@ -19,5 +19,7 @@ if predi_Bt:
     predict = model (text)
     st.warning(predict)
     
+
+
 
 
