@@ -50,6 +50,21 @@ def analysis (df_pedicted, topic) :
             "neu": len(label_predicted) -  label_POSITIVE - label_NEGATIVE
             }
 
+# Function to create a pie chart
+def create_pie_chart(label_counts, title):
+    labels = label_counts.keys()
+    sizes = label_counts.values()
+    colors = ['#ff9999','#66b3ff','#99ff99']
+    explode = (0.1, 0, 0)  # explode the first slice
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, colors=colors,
+            autopct='%1.1f%%', shadow=True, startangle=90)
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+    st.pyplot(fig1)  
+
+
 directory = 'result'
 filename = 'output.csv'
 filepath = os.path.join(directory, filename)
@@ -91,26 +106,40 @@ else:
     st.info("Please upload a CSV file.")
 
 
-if flat :
-    try: 
+# if flat :
+#     try: 
+#         result_csv = df_pedict
+#         st.write(pd.read_csv(filepath))
+#         st.title('Pie Chart Generator')
+#         column_to_analyze = st.selectbox("Select a column for analysis", result_csv.columns)
+        
+#         data = analysis(result_csv, column_to_analyze)
+#         fig, ax = plt.subplots()
+#         ax.pie(data.values(), labels=data.keys(), autopct='%1.1f%%', startangle=90)
+#         ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+#         # Display chart using Streamlit
+#           
+#     except Exception as e:
+#         st.error(f"")
+# else :
+#     st.write()
+            
+
+try: 
         result_csv = df_pedict
         st.write(pd.read_csv(filepath))
         st.title('Pie Chart Generator')
-        column_to_analyze = st.selectbox("Select a column for analysis", result_csv.columns)
-        
-        data = analysis(result_csv, column_to_analyze)
-        fig, ax = plt.subplots()
-        ax.pie(data.values(), labels=data.keys(), autopct='%1.1f%%', startangle=90)
-        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-        # Display chart using Streamlit
-        st.pyplot(fig)
-    except Exception as e:
+        column_to_analyze = result_csv.columns
+        for topic in column_to_analyze:
+            st.header(topic)
+            data = analysis(result_csv, topic)
+            create_pie_chart(data, topic)
+except Exception as e:
         st.error(f"")
-else :
-    st.write()
-            
 
-             
+
+
+          
 
 
