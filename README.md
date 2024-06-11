@@ -36,6 +36,16 @@ Some of charts visualization predicted
 ![hg](image/pie3.png)
 ![hg](image/pie4.png)
 
+## Using API
+To run the FastAPI server, use the command:
+```
+uvicorn main:app --reload
+```
+Testing the API
+```
+curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d '{"text": "Tôi rất vui"}'
+```
+
 ## Using Docker 
 ```
 docker pull hieudinhpro/school_sentiment_analysts:v1
