@@ -95,10 +95,9 @@ if uploaded_file is not None:
         st.write("Topic Names:")
         list_column_names = column_names(df)
         st.write(list_column_names)
-        global flat
         df_pedict = create_result_datafream(list_column_names, df)
         df_pedict.to_csv(filepath, index=False)
-        flat = 1
+ 
 
     except Exception as e:
         st.error(f"Error reading the CSV file: {e}")

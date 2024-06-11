@@ -19,4 +19,4 @@ RUN  python3 app/download_model.py
 EXPOSE 8501
 
 
-CMD ["streamlit", "run", "app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app/sentiment_analysis_app.py", "--server.port=8501", "--server.address=0.0.0.0"]

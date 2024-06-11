@@ -1,4 +1,6 @@
 transformers
 datasets
 huggingface_hub
-streamlit
+streamlit==1.21.0
+matplotlib
+pandas

@@ -29,12 +29,7 @@ from transformers import pipeline
 pipe = pipeline("text-classification", model="hieudinhpro/BERT_Sentiment_Vietnamese")
 ```
 ![hg](image/hg.png)
-## Sentiment Analysis 
-Some of charts visualization predicted 
-![hg](image/pie.png)
-![hg](image/pie2.png)
-![hg](image/pie3.png)
-![hg](image/pie4.png)
+
 
 ## Using API
 To run the FastAPI server, use the command:
@@ -47,6 +42,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json"
 ```
 
 ## Using Docker 
+#### Version 1:
 ```
 docker pull hieudinhpro/school_sentiment_analysts:v1
 ```
@@ -54,4 +50,15 @@ docker pull hieudinhpro/school_sentiment_analysts:v1
 docker run -p 8501:8501 hieudinhpro/school_sentiment_analysts:v1
 ```
 ![st](image/st.png)
+#### Version 2:
+
+```
+docker pull hieudinhpro/school_sentiment_analysts:v2
+```
+```
+docker run -p 8501:8501 hieudinhpro/school_sentiment_analysts:v2
+```
+![st](image/st2.png)
+![st](image/st3.png)
+
 
